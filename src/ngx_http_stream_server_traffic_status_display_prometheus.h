@@ -62,7 +62,6 @@
     "protocol=\"%V\",code=\"403\"} %uA\n"                                      \
     "nginx_sts_server_connects_total{listen=\"%V\",port=\"%ui\","              \
     "protocol=\"%V\",code=\"5xx\"} %uA\n"                                      \
-
     "nginx_sts_server_connects_total{listen=\"%V\",port=\"%ui\","              \
     "protocol=\"%V\",code=\"total\"} %uA\n"                                    \
     "nginx_sts_server_session_seconds_total{listen=\"%V\",port=\"%ui\","       \
@@ -118,7 +117,6 @@
     "direction=\"403\"} %uA\n"                                                 \
     "nginx_sts_filter_connects_total{filter=\"%V\",filter_name=\"%V\","        \
     "direction=\"5xx\"} %uA\n"                                                 \
-
     "nginx_sts_filter_connects_total{filter=\"%V\",filter_name=\"%V\","        \
     "direction=\"total\"} %uA\n"                                               \
     "nginx_sts_filter_session_seconds_total{filter=\"%V\","                    \
@@ -201,7 +199,6 @@
     "code=\"403\"} %uA\n"                                                      \
     "nginx_sts_upstream_connects_total{upstream=\"%V\",backend=\"%V\","        \
     "code=\"5xx\"} %uA\n"                                                      \
-
     "nginx_sts_upstream_connects_total{upstream=\"%V\",backend=\"%V\","        \
     "code=\"total\"} %uA\n"                                                    \
     "nginx_sts_upstream_session_seconds_total{upstream=\"%V\","                \
