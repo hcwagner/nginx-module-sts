@@ -52,10 +52,12 @@
     "\"2xx\":%uA,"                                                             \
     "\"3xx\":%uA,"                                                             \
     "\"4xx\":%uA,"                                                             \
+    "\"403\":%uA,"                                                             \
     "\"5xx\":%uA"                                                              \
     "},"                                                                       \
     "\"sessionMsecCounter\":%uA,"                                              \
     "\"sessionMsec\":%M,"                                                      \
+
     "\"sessionMsecs\":{"                                                       \
     "\"times\":[%s],"                                                          \
     "\"msecs\":[%s]"                                                           \
@@ -72,7 +74,8 @@
     "\"1xx\":%uA,"                                                             \
     "\"2xx\":%uA,"                                                             \
     "\"3xx\":%uA,"                                                             \
-    "\"4xx\":%uA,"                                                             \
+    "\"4xx\":%uA," 
+    "\"403\":%uA,"                                                            \
     "\"5xx\":%uA,"                                                             \
     "\"sessionMsecCounter\":%uA"                                               \
     "}"                                                                        \
@@ -92,7 +95,8 @@
     "\"1xx\":%uA,"                                                             \
     "\"2xx\":%uA,"                                                             \
     "\"3xx\":%uA,"                                                             \
-    "\"4xx\":%uA,"                                                             \
+    "\"4xx\":%uA,"    
+    "\"403\":%uA,"                                                         \
     "\"5xx\":%uA"                                                              \
     "},"                                                                       \
     "\"sessionMsecCounter\":%uA,"                                              \
@@ -148,7 +152,8 @@
     "\"1xx\":%uA,"                                                             \
     "\"2xx\":%uA,"                                                             \
     "\"3xx\":%uA,"                                                             \
-    "\"4xx\":%uA,"                                                             \
+    "\"4xx\":%uA,"   
+    "\"403\":%uA,"                                                          \
     "\"5xx\":%uA,"                                                             \
     "\"sessionMsecCounter\":%uA,"                                              \
     "\"uSessionMsecCounter\":%uA,"                                             \

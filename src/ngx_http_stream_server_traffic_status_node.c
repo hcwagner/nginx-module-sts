@@ -151,6 +151,7 @@ ngx_http_stream_server_traffic_status_node_zero(ngx_http_stream_server_traffic_s
     stsn->stat_2xx_counter = 0;
     stsn->stat_3xx_counter = 0;
     stsn->stat_4xx_counter = 0;
+    stsn->stat_403_counter = 0;
     stsn->stat_5xx_counter = 0;
 
     stsn->stat_session_time_counter = 0;
@@ -163,6 +164,7 @@ ngx_http_stream_server_traffic_status_node_zero(ngx_http_stream_server_traffic_s
     stsn->stat_2xx_counter_oc = 0;
     stsn->stat_3xx_counter_oc = 0;
     stsn->stat_4xx_counter_oc = 0;
+    stsn->stat_403_counter_oc = 0;
     stsn->stat_5xx_counter_oc = 0;
     stsn->stat_session_time_counter_oc = 0;
     stsn->stat_u_connect_time_counter_oc = 0;

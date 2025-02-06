@@ -69,6 +69,9 @@
     if (o->stat_4xx_counter > c->stat_4xx_counter) {                           \
         c->stat_4xx_counter_oc++;                                              \
     }                                                                          \
+    if (o->stat_403_counter > c->stat_403_counter) {                           \
+        c->stat_403_counter_oc++;                                              \
+    }                                                                          \
     if (o->stat_5xx_counter > c->stat_5xx_counter) {                           \
         c->stat_5xx_counter_oc++;                                              \
     }                                                                          \

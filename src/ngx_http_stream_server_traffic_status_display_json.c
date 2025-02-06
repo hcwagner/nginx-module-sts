@@ -83,6 +83,7 @@ ngx_http_stream_server_traffic_status_display_set_server_node(
                       stsn->stat_2xx_counter,
                       stsn->stat_3xx_counter,
                       stsn->stat_4xx_counter,
+                      stsn->stat_403_counter,
                       stsn->stat_5xx_counter,
                       stsn->stat_session_time_counter,
                       ngx_http_stream_server_traffic_status_node_time_queue_average(
@@ -104,6 +105,7 @@ ngx_http_stream_server_traffic_status_display_set_server_node(
                       stsn->stat_2xx_counter_oc,
                       stsn->stat_3xx_counter_oc,
                       stsn->stat_4xx_counter_oc,
+                      stsn->stat_403_counter_oc,
                       stsn->stat_5xx_counter_oc,
                       stsn->stat_session_time_counter_oc);
 
@@ -143,6 +145,7 @@ ngx_http_stream_server_traffic_status_display_set_server(ngx_http_request_t *r,
             stscf->stats.stat_2xx_counter += stsn->stat_2xx_counter;
             stscf->stats.stat_3xx_counter += stsn->stat_3xx_counter;
             stscf->stats.stat_4xx_counter += stsn->stat_4xx_counter;
+            stscf->stats.stat_403_counter += stsn->stat_403_counter;
             stscf->stats.stat_5xx_counter += stsn->stat_5xx_counter;
             stscf->stats.stat_session_time_counter += stsn->stat_session_time_counter;
             ngx_http_stream_server_traffic_status_node_time_queue_merge(
@@ -156,6 +159,7 @@ ngx_http_stream_server_traffic_status_display_set_server(ngx_http_request_t *r,
             stscf->stats.stat_2xx_counter_oc += stsn->stat_2xx_counter_oc;
             stscf->stats.stat_3xx_counter_oc += stsn->stat_3xx_counter_oc;
             stscf->stats.stat_4xx_counter_oc += stsn->stat_4xx_counter_oc;
+            stscf->stats.stat_403_counter_oc += stsn->stat_403_counter_oc;
             stscf->stats.stat_5xx_counter_oc += stsn->stat_5xx_counter_oc;
             stscf->stats.stat_session_time_counter_oc += stsn->stat_session_time_counter_oc;
 
@@ -300,6 +304,7 @@ ngx_http_stream_server_traffic_status_display_set_upstream_node(ngx_http_request
                 stsn->stat_in_bytes, stsn->stat_out_bytes,
                 stsn->stat_1xx_counter, stsn->stat_2xx_counter,
                 stsn->stat_3xx_counter, stsn->stat_4xx_counter,
+                stsn->stat_403_counter,
                 stsn->stat_5xx_counter,
                 stsn->stat_session_time_counter,
                 ngx_http_stream_server_traffic_status_node_time_queue_average(
@@ -357,7 +362,8 @@ ngx_http_stream_server_traffic_status_display_set_upstream_node(ngx_http_request
                 stsn->stat_connect_counter_oc, stsn->stat_in_bytes_oc,
                 stsn->stat_out_bytes_oc, stsn->stat_1xx_counter_oc,
                 stsn->stat_2xx_counter_oc, stsn->stat_3xx_counter_oc,
-                stsn->stat_4xx_counter_oc, stsn->stat_5xx_counter_oc,
+                stsn->stat_4xx_counter_oc, stsn->stat_403_counter_oc,
+                stsn->stat_5xx_counter_oc,
                 stsn->stat_session_time_counter_oc, stsn->stat_u_session_time_counter_oc,
                 stsn->stat_u_connect_time_counter_oc, stsn->stat_u_first_byte_time_counter_oc);
 
